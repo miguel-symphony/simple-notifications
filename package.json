@@ -1,0 +1,17 @@
+{
+  "name": "simple-notifications",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "needle": "^2.4.0",
+    "symphony-api-client-node": "^1.0.4"
+  }
+}

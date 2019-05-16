@@ -1,0 +1,23 @@
+{
+    "sessionAuthHost": "develop.symphony.com",
+    "sessionAuthPort": 443,
+    "keyAuthHost": "develop.symphony.com",
+    "keyAuthPort": 443,
+    "podHost": "develop.symphony.com",
+    "podPort": 443,
+    "agentHost": "develop.symphony.com",
+    "agentPort": 443,
+
+    "botUsername": "bot.user",
+    "botEmailAddress": "bot.user@example.com",
+
+    "authType": "rsa",
+    "botPrivateKeyPath": "./",
+    "botPrivateKeyName": "bot.user-private.pem",
+
+    "debug": false,
+    "room": "Stock Update",
+    "intervalSec": 5,
+    "apiUrl": "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=MSFT&apikey=demo",
+    "template": "<card accent=\"tempo-bg-color--blue\" iconSrc=\"<% if (change > 0) { %>https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Green_Arrow_Top-512.png<% } else if (change < 0) { %>https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Red_Arrow_Down-512.png<% } else { %>https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Red_Arrow_Right-2-256.png<% }%>\"><header>Stock Update for <%= symbol %></header><body>Curr Price: $<%= price %><br/>Prev Close: $<%= prevClose %><br/>Change: <%= change %><br/>% Change: <%= changePercent %></body></card>"  
+}
